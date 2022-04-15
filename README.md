@@ -46,8 +46,9 @@ cv2.merge((h,s,v))
 ```python
 # Developed By: P.Sanjay
 # Register Number:212220230042
+```
 # i) Convert BGR and RGB to HSV and GRAY
-
+```
 import cv2
 image=cv2.imread("Eat.jpeg")
 cv2.imshow("212220230042",image)
@@ -63,11 +64,11 @@ cv2.imshow("Eatz",image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
+```
 
 
 # ii)Convert HSV to RGB and BGR
-
+```
 hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
 cv2.imshow("HSV image",hsv)
 HSV_RGB=cv2.cvtColor(image,cv2.COLOR_HSV2RGB)
@@ -77,11 +78,11 @@ cv2.imshow("HSV to BGR image",HSV_BGR)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
+```
 
 
 # iii)Convert RGB and BGR to YCrCb
-
+```
 RGB_YCrCb=cv2.cvtColor(image,cv2.COLOR_RGB2YCrCb)
 cv2.imshow("RGB to YCrCb image",RGB_YCrCb)
 BGR_YCrCb=cv2.cvtColor(image,cv2.COLOR_BGR2YCrCb)
@@ -89,11 +90,11 @@ cv2.imshow("BGR to YCrCb image",BGR_YCrCb)
 cv2.imshow("Eatz",image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
+```
 
 
 # iv)Split and Merge RGB Image
-
+```
 blue = image[:,:,0]
 cv2.imshow("Blue Split",blue)
 green = image[:,:,1]
@@ -106,10 +107,10 @@ cv2.imshow("Eatz",image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
-
+```
 
 # v) Split and merge HSV Image
-
+```
 hsv=cv2.cvtColor(image,cv2.COLOR_BGR2HSV)
 h, s, v = cv2.split(hsv)
 cv2.imshow('h_plane', h)
